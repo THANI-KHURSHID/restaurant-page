@@ -1,0 +1,23 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "A page made for TOP. Covers webpack and classes in JS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/THANI-KHURSHID/restaurant-page.git"
+  },
+  "author": "thani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/THANI-KHURSHID/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/THANI-KHURSHID/restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
