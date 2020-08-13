@@ -1,15 +1,14 @@
 const container = document.querySelector("#content");
+var home = makeAlink("HOME");
+var menu = makeAlink("MENU");
+var contact = makeAlink("CONTACT");
 export function renderHomePage() {
   var top = document.createElement("div");
   container.appendChild(top);
   top.className = "topnav";
-  var home = makeAlink("HOME");
-  var menu = makeAlink("MENU");
-  var contact = makeAlink("CONTACT");
-  top.append(contact , menu , home);
+  top.append(contact, menu, home);
   addLogo();
   addMiddleText();
- 
 }
 function addLogo() {
   const name = `Z_Z`;
@@ -32,12 +31,12 @@ function addMiddleText() {
   middleDiv.appendChild(line);
 }
 function makeAlink(value) {
-  var a = document.createElement('a');
+  var a = document.createElement("a");
   var linkText = document.createTextNode(value);
   a.appendChild(linkText);
   a.title = value;
   a.href = "#";
   document.body.appendChild(a);
   return a;
-
 }
+export {home , contact , menu}

@@ -6,7 +6,10 @@ document.getElementsByTagName("body")[0].appendChild(div);
 export function renderContactUs() {
   createHeading();
   createForm();
-  div.style.display = "none";
+  const bgimg = document.querySelector(".bgimg");
+  bgimg.style = "display:none";
+  div.style.color = "brown";
+  console.log(div);
 }
 function createHeading() {
   let text = document.createElement("h1");
@@ -23,7 +26,6 @@ function createForm() {
   var btn = document.createElement("input");
   btn.type = "submit";
   btn.value = "Submit";
-
   div.append(Name,placeForText,btn );
 }
 
